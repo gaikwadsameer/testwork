@@ -18,20 +18,15 @@ namespace WebApplication1.a_user
         SqlConnection connc;
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
-        //Sql DECLARATION 
         DataSet ds;
         SqlDataAdapter da;
         SqlDataReader dr;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             Tax.Visible = false;
-
             //try
             //{
-
-
             //    if (Session["username"] != null)
             //    {
             //        // lbl_empcode.Text = "Welcome : "+ Session["empcode"].ToString();
@@ -53,13 +48,9 @@ namespace WebApplication1.a_user
             //    Session.Abandon();
             //    Response.Redirect("frm_login2.aspx");
             //}
-
-
         }
         public void DisPhoto()   // FUNCTION FOR DISPLAY PHOTO
         {
-
-           //img_photo.ImageUrl = "http://intranet.tmc.gov.in/empphotos/" + empcode + ".JPG";
 
         }
         public void Empdetails()
@@ -126,7 +117,6 @@ namespace WebApplication1.a_user
             //        Tax.Visible = true;
             //    }
             //}
-
         }
     }
 }
