@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.a_user.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="JavaScript1.js"></script>
+    <script src="JavaScript2.js"></script>
+    <style type="text/css">
+        .navbar-default {
+            background-color: #1560bd;
+        }
+
+        li a {
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .navbar-header a {
+            color: white;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+        }
+
+        .float-left-child {
+            float: left;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div>
+                <div>
+                    <nav class="navbar navbar-dark bg-primary" style="height: 60px">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+
+                                <li><a href="frm_Home.aspx"><span class="material-symbols-outlined">home</span>Home</a></li>
+
+                                <%--<li><a href="Tax_modification_authority.aspx"><span class="material-symbols-outlined">Account_circle</span>Transaction--%>
+                                <%--<li class="dropdown"><a class="dropdown-toggle"><span class="material-symbols-outlined">Account_circle</span>Transaction</a>--%>
+                                <%--<ul class="dropdown-menu">--%>
+                                <%--<li style="color: whitesmoke"><a href="capchaprac.aspx">Captcha form</a></li>--%>
+                                <%--</ul>--%>
+                                <%--</li>--%>
+
+
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="material-symbols-outlined">summarize</span>Transaction<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <asp:HyperLink ID="hyper_Tax_modification_authority" runat="server" href="Tax_modification_authority.aspx">IT Slab Updation</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="Tax" runat="server" href="Tax.aspx">tax</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="material-symbols-outlined">summarize</span>Report<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <%-- <li><asp:HyperLink ID="HyperLink1" runat="server" href="frm_grosstax.aspx">Gross Taxable Income</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink2" runat="server" href="frm_Annextax.aspx">Annexture1 Income Tax</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink3" runat="server" href="frm_moe.aspx">MOE</asp:HyperLink></li>--%>
+                                        <li>
+                                            <asp:HyperLink ID="hyper_frm_paycodewise_Report" runat="server" href="frm_paycodewise_Report.aspx">Paycode Wise Report</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="hyper_frm_paycodewise_Report1" runat="server" href="frm_paycodewise_Report1.aspx">Paycode Wise Report1</asp:HyperLink></li>
+                                        <%--<li><asp:HyperLink ID="hyper_frm_paycodewise_Report2" runat="server" href="frm_paycodewise_Report2.aspx">Paycode Wise Report2</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="hyper_frm_paycodewise_Report3" runat="server" href="frm_paycodewise_Report3.aspx">Paycode Wise Report3</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="hyper_frm_paycodewise_Report4" runat="server" href="frm_paycodewise_Report4.aspx">Paycode Wise Report4</asp:HyperLink></li>--%>
+                                    </ul>
+                                </li>
+                                <li><a href="frm_login.aspx"><span class="material-symbols-outlined">logout</span>Logout</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class='parent'>
+                        <div class='child float-left-child'>
+                            <asp:Image ID="img_photo" runat="server" class="w3-circle w3-margin-right" Style="width: 46px; height: 46px; border-radius: 17px;" />
+                        </div>
+                        <div class='child float-left-child'>
+                            <div class="nav-profile-text d-flex flex-column pr-3">
+                                <span class="font-weight-medium mb-2">Welcome, </span>
+                                <asp:Label ID="lbl_empcode" runat="server" BackColor="Red"></asp:Label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
