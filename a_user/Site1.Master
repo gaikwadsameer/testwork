@@ -43,17 +43,7 @@
                     <nav class="navbar navbar-dark bg-primary" style="height: 60px">
                         <div class="container-fluid">
                             <ul class="nav navbar-nav">
-
                                 <li><a href="frm_Home.aspx"><span class="material-symbols-outlined">home</span>Home</a></li>
-
-                                <%--<li><a href="Tax_modification_authority.aspx"><span class="material-symbols-outlined">Account_circle</span>Transaction--%>
-                                <%--<li class="dropdown"><a class="dropdown-toggle"><span class="material-symbols-outlined">Account_circle</span>Transaction</a>--%>
-                                <%--<ul class="dropdown-menu">--%>
-                                <%--<li style="color: whitesmoke"><a href="capchaprac.aspx">Captcha form</a></li>--%>
-                                <%--</ul>--%>
-                                <%--</li>--%>
-
-
                                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="material-symbols-outlined">summarize</span>Transaction<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li>
@@ -62,24 +52,19 @@
                                             <asp:HyperLink ID="Tax" runat="server" href="Tax.aspx">tax</asp:HyperLink></li>
                                     </ul>
                                 </li>
-
-
                                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span class="material-symbols-outlined">summarize</span>Report<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <%-- <li><asp:HyperLink ID="HyperLink1" runat="server" href="frm_grosstax.aspx">Gross Taxable Income</asp:HyperLink></li>
                                     <li><asp:HyperLink ID="HyperLink2" runat="server" href="frm_Annextax.aspx">Annexture1 Income Tax</asp:HyperLink></li>
                                     <li><asp:HyperLink ID="HyperLink3" runat="server" href="frm_moe.aspx">MOE</asp:HyperLink></li>--%>
-                                        <li>
-                                            <asp:HyperLink ID="hyper_frm_paycodewise_Report" runat="server" href="frm_paycodewise_Report.aspx">Paycode Wise Report</asp:HyperLink></li>
-                                        <li>
-                                            <asp:HyperLink ID="hyper_frm_paycodewise_Report1" runat="server" href="frm_paycodewise_Report1.aspx">Paycode Wise Report1</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="hyper_frm_paycodewise_Report" runat="server" href="frm_paycodewise_Report.aspx">Paycode Wise Report</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="hyper_frm_paycodewise_Report1" runat="server" href="frm_paycodewise_Report1.aspx">Paycode Wise Report1</asp:HyperLink></li>
                                         <%--<li><asp:HyperLink ID="hyper_frm_paycodewise_Report2" runat="server" href="frm_paycodewise_Report2.aspx">Paycode Wise Report2</asp:HyperLink></li>
                                         <li><asp:HyperLink ID="hyper_frm_paycodewise_Report3" runat="server" href="frm_paycodewise_Report3.aspx">Paycode Wise Report3</asp:HyperLink></li>
                                         <li><asp:HyperLink ID="hyper_frm_paycodewise_Report4" runat="server" href="frm_paycodewise_Report4.aspx">Paycode Wise Report4</asp:HyperLink></li>--%>
                                     </ul>
                                 </li>
                                 <li><a href="frm_login.aspx"><span class="material-symbols-outlined">logout</span>Logout</a></li>
-
                             </ul>
                         </div>
                     </nav>
